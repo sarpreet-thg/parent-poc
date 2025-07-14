@@ -29,4 +29,4 @@ jobs:
       - name: Deploy
         run: mvn --batch-mode deploy
         env:
-         GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
