@@ -7,12 +7,10 @@ on:
 
 jobs:
   Build:
+    permissions: write-all
     name: Publish Maven Package
     runs-on: ubuntu-latest
     continue-on-error: false
-    permissions:
-      contents: read
-      packages: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
